@@ -34,7 +34,7 @@ class _UserListScreenState extends State<UserListScreen> {
         backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
         title: const Text(
-          'Danh Bạ',
+          'Danh Bạ - MSSV:6451071012',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,

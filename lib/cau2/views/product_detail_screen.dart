@@ -39,7 +39,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
         title: const Text(
-          'Chi Tiết Sản Phẩm',
+          'Chi Tiết Sản Phẩm - MSSV:6451071012',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
