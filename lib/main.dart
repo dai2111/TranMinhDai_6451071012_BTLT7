@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'cau1/views/user_list_screen.dart';
 import 'cau2/views/product_detail_screen.dart';
+import 'cau3/views/create_post_screen.dart';
+import 'cau4/views/update_user_screen.dart';
+import 'cau5/views/task_list_screen.dart';
+import 'cau6/views/search_screen.dart';
+import 'cau7/views/news_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,6 +51,51 @@ class SelectionScreen extends StatelessWidget {
         icon: Icons.shopping_bag_rounded,
         color: Colors.teal,
         destination: const ProductDetailScreen(),
+      ),
+      _ExerciseItem(
+        number: '03',
+        title: 'Create Post',
+        subtitle: 'POST API · Mạng xã hội',
+        description: 'Tạo bài viết mới, gửi JSON body qua http.post() và hiển thị response từ server.',
+        icon: Icons.edit_rounded,
+        color: Colors.deepPurple,
+        destination: const CreatePostScreen(),
+      ),
+      _ExerciseItem(
+        number: '04',
+        title: 'Update User Info',
+        subtitle: 'PUT API · Hồ sơ cá nhân',
+        description: 'Load thông tin user (GET), chỉnh sửa form rồi gửi PUT để cập nhật.',
+        icon: Icons.edit_note_rounded,
+        color: Color(0xFF667EEA),
+        destination: UpdateUserScreen(),
+      ),
+      _ExerciseItem(
+        number: '05',
+        title: 'Delete Item',
+        subtitle: 'DELETE API · Quản lý task',
+        description: 'Xóa task bằng http.delete(), Dismissible vuốt hoặc icon button.',
+        icon: Icons.delete_outline_rounded,
+        color: Colors.orange,
+        destination: TaskListScreen(),
+      ),
+      _ExerciseItem(
+        number: '06',
+        title: 'Search API',
+        subtitle: 'Query Params · Tìm kiếm sản phẩm',
+        description: 'Tìm kiếm theo keyword với debounce + lọc theo category.',
+        icon: Icons.search_rounded,
+        color: Colors.pink,
+        destination: SearchScreen(),
+      ),
+      _ExerciseItem(
+        number: '07',
+        title: 'Pull to Refresh',
+        subtitle: 'RefreshIndicator · Tin tức',
+        description: 'Kéo xuống để reload dữ liệu với RefreshIndicator animation.',
+        icon: Icons.refresh_rounded,
+        color: Color(0xFF3A86FF),
+        destination: NewsScreen(),
       ),
     ];
 
